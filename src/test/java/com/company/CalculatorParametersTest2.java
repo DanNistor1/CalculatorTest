@@ -1,7 +1,6 @@
 package com.company;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,9 +12,8 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class CalculatorParametersTest {
+public class CalculatorParametersTest2 {
 
-//    private Calculator calculator;
     private static Calculator calculator;
 
     @Parameters
@@ -42,12 +40,7 @@ public class CalculatorParametersTest {
     @Parameter(5)
     public  int multiply;
 
-/*
-    @Before
-    public void setUp(){
-        calculator = new Calculator();
-    }
-*/
+
     @BeforeClass
     public static void setUp(){
         calculator = new Calculator();
